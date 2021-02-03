@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN FLAG</title>
+
+    <style>
+        form {
+            /* border: 2px solid gray; */
+            border-radius: 10px;
+            padding: 2rem 2rem 2rem 1rem;
+            font-size: 110%;
+        }
+
+        label {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group {
+            padding: .5rem;
+            margin: .5rem;
+        }
+
+        input {
+            width: 100%;
+            margin-top: .5rem;
+            height: 20px;
+        }
+        
+        select {
+            width: 100%;
+            margin-top: .5rem;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+
+        <section id="form" style="display: flex; justify-content: center;">
+            
+            <form enctype="multipart/form-data" class="mt-2" style="width: 30%;">
+
+                <h1 style="text-align: center; border-bottom: gray; font-size: 250%; letter-spacing: 5px;">REGISTER</h1>
+
+                <img src="https://www.avarievents.com/wp-content/uploads/2019/07/1-3-1080x450.jpg" alt="" height="200px">
+
+                <div class="form-group">
+                  <label>First Name<span style="color: red;">*</span></label>
+                  <br>
+                  <input type="text" class="form-control" id="fname" name="fname" placeholder="" required maxlength="60">
+                </div>
+        
+                <div class="form-group">
+                  <label>Last Name<span style="color: red;">*</span></label>
+                  <br>
+                  <input type="text" class="form-control" id="lname" name="lname" placeholder="" required maxlength="60">
+                </div>
+        
+                <div class="form-group">
+                  <label>Email<span style="color: red;">*</span></label>
+                  <br>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="" required maxlength="60">
+                </div>
+
+                <div class="form-group">
+                  <label>Contact<span style="color: red;">*</span></label>
+                  <br>
+                  <input type="text" class="form-control" id="contact" name="contact" placeholder="" required maxlength="60">
+                </div>
+        
+                <div class="form-group">
+                  <label for="image">Upload ID<span style="color: red;">*</span></label>
+                  <br>
+                  <input type="file" accept=".jpg, .png, .jpeg, .JPG, .JPEG, .PNG" class="image" id="image" name="image" placeholder="" >
+                </div>
+        
+                <div class="form-group" style="text-align: left;">
+                  <label for="gender">Gender<span style="color: red;">*</span></label>
+                  <br>
+                  <input type="radio" name="gender" id="male" value="Male">
+                  <label for="">Male</label>
+                  <input type="radio" name="gender" id="female" value="Female">
+                  <label for="">Female</label>
+                  <input type="radio" name="gender" id="female" value="Female">
+                  <label for="">Others</label>
+                </div>
+        
+                <div class="form-group">
+                  <label for="course">Qualification<span style="color: red;">*</span></label>
+                  <br>
+                  <select name="course" id="course" required class="form-control">
+                    <option value="" disabled selected>Select</option>
+                    <option value="tenth">10th</option>
+                    <option value="twelth">12th</option>
+                    <option value="ug">Under Graduate</option>
+                    <option value="pg">Post Graduate</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments" style="margin-bottom: .5rem;">Anything you would like to ask</label>
+                    <br>
+                    <textarea name="comments" id="comments" cols="55" rows="10"></textarea>
+                </div>
+
+                <!-- <div class="form-group" style="display: flex;">
+                    <input type="checkbox" name="tnc" id="tnc">
+                    <label for="tnc" style="width: 100%;">I accept the Terms and Conditions.</label>
+                </div> -->
+        
+                <button type="submit" class="btn btn-primary m-auto justify-content-center" style="text-align: center;">Register</button>
+        
+              </form>
+        </section>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>
