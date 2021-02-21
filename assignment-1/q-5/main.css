@@ -1,0 +1,26 @@
+#container {
+      border: solid 3px #474544;
+      max-width: 800px;
+      margin: 60px auto;
+      
+    }
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: left;
+    }
+      
+    .box {
+        text-align: center;
+    }
+    input[type=text] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }

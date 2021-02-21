@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/40a990fb5a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>FeedBack Form</title>
+
+</head>
+
+<body id="container" class="container">
+
+    <div class="box">
+        <i class="far fa-file-alt" style="font-size: 300%;">&nbsp;<b>FeedBack Form</b></i>
+        <br><br>
+    </div>
+
+    <div>
+        <form action="">
+            <div>
+                <div>
+                    FirstName: <input type="text" value="" name="Firstname" placeholder="eg-John" maxlength="15"
+                        required> &nbsp; &nbsp;<br>
+
+                    LastName: <input type="text" value="" name="Lastname" placeholder="eg- max" maxlength="15" required>
+                    <br><br>
+
+                    Email: <input type="email" value="" name="email" placeholder="eg- john@gmail.com" maxlength="15"
+                        required><br><br>
+                </div>
+
+                <div>
+                    <label>Country:</label>
+                    <select name="country">
+                        <option value="" disabled selected>Select</option>
+                        <option value="">India</option>
+                        <option value="">US</option>
+                        <option value="">Other</option>
+                    </select> &nbsp;
+
+                    <label>State:</label>
+                    <select name="country">
+                        <option value="" disabled selected>Select</option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Gujurat</option>
+                        <option value="">Other</option>
+                    </select> <br><br>
+
+                    Phone: <input type="text" value="" name="phone_num" placeholder="123456786" maxlength="10"
+                        required><br><br>
+
+                    
+
+                    <label>Gender:</label>
+                    <input type="radio" value="" name="gender">Male &nbsp;
+                    <input type="radio" value="" name="gender">Female &nbsp;
+                    <input type="radio" value="" name="gender">Other
+                    <br><br>
+                </div>
+
+                <div >
+                    CollegeName: <input type="text" value="" name="com_name" placeholder="eg-google" maxlength="25"
+                        required> &nbsp; &nbsp;
+                    <br><br>
+
+                    
+
+                    <label>Was the session useful?</label>
+                    <input type="radio" value="" name="yes">Satisfied &nbsp;
+                    <input type="radio" value="" name="yes">Neutral &nbsp;
+                    <input type="radio" value="" name="yes">Unsatisfied &nbsp;
+                    <br><br>
+
+                    <label>The instructed stimulated my interest in the course topic?</label>
+                    <input type="radio" value="" name="yes">Satisfied &nbsp;
+                    <input type="radio" value="" name="yes">Neutral &nbsp;
+                    <input type="radio" value="" name="yes">Unsatisfied &nbsp;
+                    <br><br>
+
+                    <label>The instructed was well-prepared and organized for every class?</label>
+                    <input type="radio" value="" name="yes">Yes &nbsp;
+                    <input type="radio" value="" name="yes">No &nbsp;
+                    <br><br>
+
+                    Is there anything that you want us to change about the session?
+                     <input type="text" value="" name="com_name" placeholder="eg-Lecture,type of teaching etc " maxlength="50"
+                        style="width :fit-content" required> &nbsp; &nbsp;
+                    <br><br>
+
+                    Additional comments:
+                    <input type="text" value="" name="com_name" placeholder="Your comments " maxlength="50"
+                        style="width :fit-content" required> &nbsp; &nbsp;
+                    <br><br>
+                </div>
+            </div>
+
+            <button type="submit" style="text-align: center;">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

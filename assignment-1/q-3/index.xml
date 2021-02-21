@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="main.xsl" type="text/xsl"?>
+
+<user_info>
+    <user>
+        <name>Name</name>
+        <roll_no>XX</roll_no>
+        <marks>0.00</marks>
+        <branch>CSE</branch>
+    </user>
+    <user>
+        <name>Name</name>
+        <roll_no>XX</roll_no>
+        <marks>0.00</marks>
+        <branch>IT</branch>
+    </user>
+    <user>
+        <name>Name</name>
+        <roll_no>XX</roll_no>
+        <marks>0.00</marks>
+        <branch>IT</branch>
+    </user>
+    <user>
+        <name>Name</name>
+        <roll_no>XX</roll_no>
+        <marks>0.00</marks>
+        <branch>IT</branch>
+    </user>
+    <user>
+        <name>Name</name>
+        <roll_no>XX</roll_no>
+        <marks>0.00/marks>
+        <branch>IT</branch>
+    </user>
+    <user>
+        <name>Name</name>
+        <roll_no>XX</roll_no>
+        <marks>0.00</marks>
+        <branch>IT</branch>
+    </user>
+</user_info>
