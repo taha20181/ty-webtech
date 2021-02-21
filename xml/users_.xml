@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="users.xsl" type="text/xsl"?>
+
+<userInfo>
+    <user>
+        <name>Adia</name>
+        <age>20</age>
+        <gender>Female</gender>
+        <contact>0123456789</contact>
+        <email>test@gmail.com</email>
+    </user>
+    <user>
+        <name>Gauri</name>
+        <age>20</age>
+        <gender>Female</gender>
+        <contact>0123456789</contact>
+        <email>test@gmail.com</email>
+    </user>
+    <user>
+        <name>Musharraf</name>
+        <age>20</age>
+        <gender>Male</gender>
+        <contact>0123456789</contact>
+        <email>test@gmail.com</email>
+    </user>
+    <user>
+        <name>Rucha</name>
+        <age>20</age>
+        <gender>Female</gender>
+        <contact>0123456789</contact>
+        <email>test@gmail.com</email>
+    </user>
+    <user>
+        <name>Sakshi</name>
+        <age>20</age>
+        <gender>Female</gender>
+        <contact>0123456789</contact>
+        <email>test@gmail.com</email>
+    </user>
+</userInfo>

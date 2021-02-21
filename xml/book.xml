@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet href="book.css" type="text/css"?> -->
+<?xml-stylesheet href="book.xsl" type="text/xsl"?>
+
+<catalog>
+    <book genre="sci-fi" mode="online" publication="Penguin">
+        <title>Some Title</title>
+        <author>The Author</author>
+        <cost>250/-</cost>
+        <year>2006</year>
+    </book>
+    <book genre="sci-fi" mode="online" publication="Penguin">
+        <title>Some Title</title>
+        <author>The Author</author>
+        <cost>250/-</cost>
+        <year>2006</year>
+    </book>
+    <book genre="sci-fi" mode="online" publication="Penguin">
+        <title>Some Title</title>
+        <author>The Author</author>
+        <cost>250/-</cost>
+        <year>2006</year>
+    </book>
+</catalog>
