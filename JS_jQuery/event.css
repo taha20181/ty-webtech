@@ -1,0 +1,22 @@
+#first{
+	border-width:2px;
+	border-style: solid;
+	border-color: blue;
+	margin: 5px;
+	padding: 10px;
+	background-color: pink
+}
+#second{
+	border-width:2px;
+	border-style: solid;
+	border-color: blue;
+	margin: 5px;
+	padding: 10px;
+}
+#third{
+	border-width:3px;
+	border-style: solid;
+	border-color: blue;
+	margin: 5px;
+	padding: 10px;
+}

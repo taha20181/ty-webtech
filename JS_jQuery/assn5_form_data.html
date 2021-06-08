@@ -1,0 +1,42 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#btn1").click(function()
+			{
+				var name="<tr><td>name:  </td><td>"+$("#txtname").val()+"</td></tr>";
+				var gender="<tr><td>Gender: </td><td>"+$(".gender:checked").val()+"</td></tr>";
+				var city="<tr><td>city: </td><td>"+$("#select").val()+"</td></tr>";
+				
+				var hobbies=$("input[type=checkbox]:checked");
+				
+				var str="";
+				$.each(hobbies,function(k,v)
+				{
+					str+="<tr><td>Hobbies: </td><td>"+v.value+"</td></tr>"
+				})
+				
+				$("#tbl").append(name,gender,city,str);
+			})
+		})
+	</script>
+</head>
+<body>
+	Enter name:<input type="text" id="txtname"></input><br><br>
+	Gender:<input type="radio" value="female" class="gender" name="g1">female</input>
+			<input type="radio" value="male" class="gender" name="g1">male</input><br><br>
+	select city:<select id="select">
+					<option value="Pune">Pune</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Delhi">Delhi</option>
+				</select><br><br>
+	Hobbies:<input type="checkbox" value="music" >Music</input><br><br>
+			<input type="checkbox" value="reading" >Reading</input><br><br>
+			<input type="checkbox" value="Dancing" >Dancing</input><br>	<br>		
+
+			<input type="button" value="display" id="btn1"></input><br>
+	<table id="tbl" border=1></table>		
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<style type="text/css">
+		.c1
+		{
+			height: 100px;
+			width: 100px;
+			border: 1px red solid;
+		}
+		.c2
+		{
+			height: 500px;
+			width: 500px;
+			border: 1px red solid;
+		}
+	</style>
+	<script src="jquery-1.11.3.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$("#btn").click(function()
+			{
+				var x=$("<div>",{"id":"d1","text":"this is div"});
+				x.css({"class":"c1","color":"red","background-color":"yellow"});
+				$("body").append(x);
+			})
+			$("#chng").click(function()
+			{
+				var d=$("#d1");
+				d.toggleClass("c2");
+			})
+		})
+	</script>
+</head>
+<body>
+<input type="button" value="click me" id="btn"></input>
+<input type="button" value="change height and width" id="chng">
+</body>
+</html>

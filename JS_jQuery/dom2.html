@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<!--
+1. append() - Inserts content at the end of the selected elements
+2. prepend() - Inserts content at the beginning of the selected elements
+3. after() - Inserts content after the selected elements
+4. before() - Inserts content before the selected elements   
+5. remove() - Removes the selected element (and its child elements)
+6. empty() - Removes the child elements from the selected elements
+-->
+<head>
+	<title>DOM2</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Jquery DOM manipulations</h2>
+<button id="btn1">Append</button>
+<button id="btn2">After</button>
+<button id="btn3">Prepend</button>
+<button id="btn4">Before</button>
+<br><br>
+<button id="btn5">Remove</button>
+<button id="btn6">Empty</button><br>
+<div id="div1" class="mydiv">
+	<p id="p1" class="p1class">This is a <b>paragraph</b> in the division</p>
+	<p id="p2">This is a new paragraph</p>
+</div>
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+	$(document).click(function(){
+
+		$("#btn1").click(function(){
+			$("#div1").append("This is also a paragraph");
+		});
+
+		$("#btn2").click(function(){
+
+			$("#div1").after("Hey...This is also a paragraph");
+		});
+
+		$("#btn3").click(function(){
+
+			$("#div1").prepend("Yeah!!This is also a paragraph");
+		});
+
+		$("#btn4").click(function(){
+
+			$("#div1").before("This also a paragraph");
+		});
+
+		
+		$("#btn5").click(function(){
+
+			$("#div1").remove();
+			$("#p2").remove();
+		});
+		$("#btn6").click(function(){
+			$("#div1").empty();
+			$("#p2").empty();
+
+		});
+	});
+</script>
+</html>

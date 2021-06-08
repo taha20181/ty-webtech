@@ -1,0 +1,44 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="domclass.css"/>		
+</head>
+<body>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#btn1").click(function()
+			{				
+					$("#div1").addClass("newclass");
+				});
+			$("#btn2").click(function()
+			{				
+					$("#div1").removeClass("newclass");
+				});
+			$("#btn3").click(function()
+			{				
+					$("#div1").toggleClass("newclass");
+				});
+			$("#btn4").click(function()
+			{				
+					//alert($("#div1").css("font-family"));
+					$("#div1").css("font-family","Calibri")
+
+				});
+				
+		});
+		</script>
+	<button id="btn1">Add Class</button>  
+	<button  id="btn2">Remove Class</button>
+	<button  id="btn3">Toggle Class</button>
+	<button  id="btn4">CSS</button>
+	<br> <br>
+	<div id="div1" class="divclass1" value="mydiv">
+	<p id="p1" >This is a <b>paragraph</b> in the division</p>
+</div>
+<br>
+<div id="div2" class="" value="mydiv">
+	<p id="p2" >This is a <b>paragraph</b> in the division</p>
+</div>
+</body>
+</html>

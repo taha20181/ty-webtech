@@ -1,0 +1,17 @@
+.divclass1
+		{
+			border: 2px solid blue;
+			margin: 5px;
+			padding: 10px;
+		}
+		
+.newclass
+		{
+			border-radius: 10px;
+			background-color: aqua;
+		}
+.paraclass
+{
+font-weight: bold;
+color: red;
+}
