@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is paragraph 1</p>
+<p>This is paragraph 2</p>
+<p>This is paragraph 3</p>
+<p>This is paragraph 4</p>
+<p>This is paragraph 5</p><br>
+
+<button onclick="myFunction()">Click here</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("p");
+
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "aqua";
+  }
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My title</title>
+<script type="text/javascript">
+	function fn1()
+	{
+		var str = document.getElementById("text1").value;
+		var str1=document.getElementById("text2").
+		value;
+		if (str==str1)
+		{
+			alert("The username & password are same:");
+		}
+		else 		{
+						alert("The username & password are  not same:");
+		}
+
+	}
+		
+</script>
+	
+</head>
+<body>
+<input id="text1" type="text" name="" placeholder="Enter something"><br>
+<input id="text2" type="password" name="" placeholder="Enter something"><br> 
+<button onclick="fn1()" id="btn1">Click Me..</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<body style="text-align: center">
+<h1>Largest Of three</h1>
+Enter 1st Number<input type="text" id="txtnum1"><br><br>
+Enter 2nd Number<input type="text" id="txtnum2"><br><br>
+Enter 3rd Number<input type="text" id="txtnum3"><br><br>
+<input type="button" value="Click" onclick="largest()"><br><br>
+<div id="d1"></div>
+<script type="text/javascript">
+	
+	function largest()
+	{
+		var num1, num2, num3;
+		num1 = Number(document.getElementById("txtnum1").value);
+		num2 = Number(document.getElementById("txtnum2").value);
+		num3 = Number(document.getElementById("txtnum3").value);
+          var d1=document.getElementById('d1');
+		if(num1>num2 && num1>num3)
+		{
+			d1.innerHTML=num1+"-is greatest";
+		}
+		else if(num2>num1 && num2>num3)
+		{
+			d1.innerHTML=num2+"-is greatest";
+		}
+		else if(num3>num1 && num3>num1)
+		{
+			d1.innerHTML=num3+"-is greatest";
+		}
+	}
+
+
+</script>
+</body>
+</html>

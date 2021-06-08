@@ -1,0 +1,42 @@
+<html>
+<body>
+Enter no1<input type="text" id="t1"><br>
+Enter no2<input type="text" id="t2"><br>
+<select id="s1">
+<option>Add</option>
+<option>Subtract</option>
+<option>Multiply</option>
+<option>Divide</option>
+</select><br>
+<input type="button" value="Click" onclick="fun()">
+<div id="d1">Result is--</div>
+<script>
+	function fun()
+	{
+		var t1=Number(document.getElementById('t1').value);
+		var t2=Number(document.getElementById('t2').value);
+		var s1=document.getElementById('s1').value
+		var d1=document.getElementById('d1');
+		//alert("You selected "+s1);
+		switch(s1)
+		{
+			case 'Add': var add= t1+t2;
+			d1.innerHTML+=" "+add;
+			break;
+
+			case 'Subtract':var sub=t1-t2;
+			d1.innerHTML+=" "+sub;
+			break;
+
+			case 'Multiply':var mul=t1*t2;
+			d1.innerHTML+=" "+mul;
+			break;
+
+			case 'Divide':var div=t1/t2;
+			d1.innerHTML+=" "+div;
+			break; 
+		}
+	}
+</script>
+</body>
+</html>

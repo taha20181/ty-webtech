@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Large Number</title>
+</head>
+<body style="text-align: center">
+<h1>Largest Number Program</h1>
+Enter 1st Number<input type="text" id="txtnum1"></input><br><br>
+Enter 2nd Number<input type="text" id="txtnum2"></input><br><br>
+<input type="button" value="Click" onclick="largeNum()"></input><br><br>
+<div id="d1"></div>
+<script type="text/javascript">
+	
+function largeNum()
+{
+	var no1=document.getElementById('txtnum1').value;
+	var no2=document.getElementById('txtnum2').value;
+
+	if(no1>no2)
+	{
+		d1.innerHTML+="Largest Number is:"+no1;
+
+	}
+	else
+	{
+		d1.innerHTML+="Largest Number is:"+no2;
+	}	
+}
+
+
+</script>
+
+
+</body>
+</html>

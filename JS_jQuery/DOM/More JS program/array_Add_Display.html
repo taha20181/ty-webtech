@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body style="text-align: center;">
+<h1>Adding Elements in Array</h1>
+Enter Element<input type="text" id="txt"><br><br>
+<input type="button" value="Add" onclick="add()">
+<input type="button" value="Display" onclick="display()">
+<div id="d1"></div>
+<script>
+var x=[];
+function add()
+{
+	var num=document.getElementById('txt').value;
+	x.push(num);
+	alert("Element added in array is"+num);
+	//display(x)
+}
+function display()
+{
+	for(i=0;i<x.length;i++)
+	{
+		document.getElementById("d1").innerHTML+="<br> At Index "+i+" is "+x[i];
+	}
+}
+	
+</script>
+</body>
+</html>
