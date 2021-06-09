@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chrset="UTF 8">
+    <title>Event Registration</title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<h1> Welcome</h1>
+
+<div ng-app="" ng-init="quantity=1;price=100">           <!--This is used to initialize application data. Sometimes you may require some local data for your                                                      application, this can be done with the ng-init directive-->
+
+    People : <input type="number" ng-model="quantity"> <br>  <br>      <!--ng-model directive, which is used to bind the value of an HTML control to application data.--> 
+
+    Registration Price : <input type="number" ng-model="price"><br><br>
+
+    Total : {{quantity * price}}       <!--{{}} curly brackets for expressions-->
+
+</div>
+
+</body>
+</html>

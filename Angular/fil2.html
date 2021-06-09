@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myController">
+        Default currency: {{person.salary | currency}} <br />
+        Custom currency identifier: {{person.salary | currency:'Rs.'}} <br />
+        No Fraction: {{person.salary | currency:'Rs.':0}} <br />
+        Fraction 2: <span ng-bind="person.salary| currency:'GBP':2"></span>
+    </div>
+    <script>
+        var myApp = angular.module('myApp', []);
+        
+        myApp.controller("myController", function ($scope) {
+            $scope.person = { firstName: 'James', lastName: 'Bond', salary: 100000}
+        });
+    </script>
+</body>
+</html>
