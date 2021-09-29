@@ -1,0 +1,27 @@
+<<html>
+<head>
+	<title>Directives demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<h1>sample APP</h1>
+<div ng-app="">
+	<table border="2">
+		<tr>
+	<td><input type="checkbox" ng-model="enableDisableButton">Disable Button</td>
+	<td><button ng-disabled="enableDisableButton">Click Me!!</button></td>
+</tr>
+
+<tr>
+	<td><input type="checkbox" ng-model="showHide1">Show Button</td>
+	<td><button ng-show="showHide1">Click Me!!</button></td>
+</tr>
+<tr>
+	<td>Total click: {{ clickCounter }}</td>
+	<td><button ng-click="clickCounter= clickCounter + 1">Click Me..</button></td>
+</tr>
+</table>
+
+</div>
+</body>
+</html>

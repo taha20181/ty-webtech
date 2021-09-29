@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My title</title>
+<script type="text/javascript">
+	function fn1()
+	{
+		var rdb1 = document.getElementById("rd1").value;
+		var rdb2 = document.getElementById("rd2").value;
+		if(rd1.checked==true)
+		{
+		alert("Branch selected!!"+rdb1);
+	}
+	else if(rd2.checked==true)
+	{
+		alert("Branch selected!!"+rdb2);
+	}
+	else
+	{
+		alert("No BRanch selected!");
+	}
+	}
+		
+</script>
+	
+</head>
+<body>
+	<h1>Select Branch:</h1>
+<input id="rd1" type="radio" name="grp1" value="CSE" >CSE</input><br> 
+<input id="rd2" type="radio"  name="grp1" value="IT" >IT</input><br> 
+<button onclick="fn1()" id="btn1">Click Me..</button>
+</body>
+</html>

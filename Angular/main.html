@@ -12,4 +12,49 @@
 <body>
 </body>
 
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+
+	</head>
+<body>
+<h2>Angular JS Sample App</h2>
+<div ng-app="mainApp">
+
+	<p><a href="#home">HOME</a></p>
+	<p><a href="#contacts">CONTACT US</a></p>
+
+	<div ng-view></div>
+</div>
+<script>
+
+var mainApp = angular.module("mainApp", ['ngRoute']);
+mainApp.config(['$routeProvider',function($routeProvider){
+	$routeProvider.
+	when('/home',{
+		templateUrl: '/home.html',
+		controller: '/mainController'
+	}).
+when('/contacts',{
+		templateUrl: 'contacts.html',
+		controller: 'contactsController'
+
+}).
+otherwise({
+	redirectTo:'/home'
+});
+}]);
+mainApp.controller("mainController", function($scope){
+		$scope.message = "Hello, Welcome to MITADT University!!!";
+});
+mainApp.controller("contactsController", function($scope){
+		$scope.message = "You can contact us at contactus@mituniversity.edu.in";
+});
+</script>
+
+
+</body>
 </html>

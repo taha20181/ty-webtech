@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>getElementById example</title>
+<script>
+function changeColor(newColor) {
+  var elem = document.getElementById('para');
+  elem.style.color = newColor;
+}
+</script>
+</head>
+<body>
+ <h1> <p id="para">Change My color</p> <h1>
+  <button onclick="changeColor('blue');">blue</button>
+  <button onclick="changeColor('red');">red</button>
+</body>
+</html>

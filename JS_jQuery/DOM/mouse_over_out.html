@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function setNewImage()
+	{
+		document.getElementById("img1").src="2.jpg";
+	}	
+
+
+	function setOldImage()
+	{
+	document.getElementById("img1").src="1.jpg";
+		
+	}
+
+	</script>
+
+
+
+
+
+
+	<img id= "img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="1.jpg" height="300" width="300"/>
+
+</body>
+</html>

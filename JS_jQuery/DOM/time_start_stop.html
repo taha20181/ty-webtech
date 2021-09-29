@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timeout</title>
+</head>
+<body>
+	<script type="text/javascript">
+	/*
+	1.setTimeout() -The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+
+2. clearTimeout() -The clearTimeout() method clears a timer set with the setTimeout() method. The ID value returned by setTimeout() is used as the parameter for the clearTimeout() method.
+
+3.setInterval() -The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds). The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed. The ID value returned by setInterval() is used as the parameter for the clearInterval() method.
+
+4. clearInterval() -The clearInterval() method clears a timer set with the setInterval() method. The ID value returned by setInterval() is used as the parameter for the clearInterval() method.
+	*/	 
+	var ID;
+	function printMsg()
+	{
+		document.getElementById("op").innerHTML="5 seconds have passed";
+	}
+	function start()
+	{
+		ID=window.setTimeout(printMsg,5000);
+	}
+	function stop()
+	{
+		window.clearTimeout(ID);
+	}
+
+
+
+	</script>
+<button onclick="start()" id=btnAdd">Start</button>
+<h1 id="op">Welcome to MIT</h1>
+<button onclick="stop()" id=btnStop">Stop</button>
+</body>
+</html>

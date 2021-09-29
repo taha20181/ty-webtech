@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="event.css"></link>
+</head>
+<body>
+<h1>This is Jquery</h1>
+<div id="first">
+	<p id="p1">This is first para in first division</p>
+
+	<p>This is second para in first division</p>
+	
+</div>
+<div id="second">
+	<p>This is third para in second division</p>
+</div>
+
+<div id="third">
+	<ul>
+		<li>IT</li>
+		<li>CSE</li>
+		<li>ECE</li>
+	</ul>	
+
+</div>
+<div>
+	<ul>
+		<li>Arts</li>
+		<li>Commerce</li>
+		<li>Science</li>
+	</ul>
+	
+</div>
+<button id="btn1">Click Me</button>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+
+	$("button").click(function(){
+
+		$("#p1").fadeToggle();
+	});
+});
+
+</script>
+</body>
+</html>

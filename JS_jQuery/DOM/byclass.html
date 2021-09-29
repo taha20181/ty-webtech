@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p class="mypara">This is paragraph 1</p>
+<p>This is paragraph 2</p>
+<p class="mypara">This is paragraph 3</p>
+<p>This is paragraph 4</p>
+<p>This is paragraph 5</p><br>
+<a class="mypara" href="">This is anchor tag</a><br>
+<button onclick="myFunction()">Click me</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("mypara");
+  for(var i=0;i<x.length;i++)
+  {
+  	x[i].style.color= "blue";
+  }
+  
+ }
+
+</script>
+
+</body>
+</html>

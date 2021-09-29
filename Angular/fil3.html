@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app>
+    <div ng-init="person.DOB = 345568876554">
+        Default date: {{person.DOB| date}} <br /><!-- date is the filter and infront of it you can give criteria in double quotes-->
+        Short date: {{person.DOB| date:'short'}} <br />
+        Long date: {{person.DOB | date:'longDate'}} <br />
+        Year: {{person.DOB | date:'yyyy'}} <br />
+    </div>
+</body>
+</html> 

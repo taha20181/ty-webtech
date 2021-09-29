@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chrset="UTF 8">
+    <title>Event Registration</title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<h1> List of chapters</h1><br>
+
+<div ng-app="" ng-init="chapters=['Unit1','Unit3','Unit2']">
+    <ul>
+        <li ng-repeat="names in chapters">
+            {{names}}
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>
