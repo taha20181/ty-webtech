@@ -1,0 +1,16 @@
+catalog {
+    color: blue;
+}
+
+book {
+    display: block;
+}
+
+
+* {
+    background-color: aqua;
+}
+
+#form {
+    background-color: aquamarine;
+}

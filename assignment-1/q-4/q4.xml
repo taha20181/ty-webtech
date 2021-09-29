@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet href="book.css" type="text/css"?> -->
+<?xml-stylesheet href="main.xsl" type="text/xsl"?>
+
+<Invoice>
+    <product manufacturing_company="Makita">
+        <srno>1</srno>
+        <p_name>Drill Machine</p_name>
+        <unit_price>1200/-</unit_price>
+        <quantity>2</quantity>
+        <total>2400/-</total>
+    </product>
+    <product manufacturing_company="xyz">
+        <srno>2</srno>
+        <p_name>Bolt</p_name>
+        <unit_price>15/-</unit_price>
+        <quantity>15</quantity>
+        <total>225/-</total>
+    </product>
+    <product manufacturing_company="xyz">
+        <srno>3</srno>
+        <p_name>Hammer</p_name>
+        <unit_price>350/-</unit_price>
+        <quantity>3</quantity>
+        <total>1050/-</total>
+    </product>
+    <product manufacturing_company="xyz">
+        <srno>4</srno>
+        <p_name>Drill bit</p_name>
+        <unit_price>35/-</unit_price>
+        <quantity>3</quantity>
+        <total>105/-</total>
+    </product>
+    <product manufacturing_company="xyz">
+        <srno>5</srno>
+        <p_name>Screw Driver</p_name>
+        <unit_price>350/-</unit_price>
+        <quantity>1</quantity>
+        <total>350/-</total>
+    </product>
+</Invoice>
